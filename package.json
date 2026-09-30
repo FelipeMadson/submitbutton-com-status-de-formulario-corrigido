@@ -1,5 +1,5 @@
 {
-  "name": "submitbutton-com-status-de-formulario-corrigido-root",
+  "name": "@felipemadson/submitbutton-com-status-de-formulario-corrigido",
   "version": "1.1.0",
   "private": true,
   "type": "module",
@@ -19,5 +19,9 @@
     "submitbutton-com-status-de-formulario-corrigido"
   ],
   "author": "Felipe Madison (@FelipeMadson)",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "submitbutton-com-status-de-formulario-corrigido": "./bin/cli.js",
+    "@felipemadson/submitbutton-com-status-de-formulario-corrigido": "./bin/cli.js"
+  }
 }
