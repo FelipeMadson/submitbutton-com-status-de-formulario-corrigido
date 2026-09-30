@@ -1,0 +1,29 @@
+{
+  "name": "submitbutton-com-status-de-formulario-corrigido-backend",
+  "version": "1.0.0",
+  "description": "Backend Enterprise SaaS para SubmitButton com Status de Formulário Corrigido",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "node --experimental-strip-types src/server.ts",
+    "test": "node --experimental-strip-types --test tests/**/*.test.ts",
+    "build": "tsc --noEmit",
+    "db:migrate": "node --experimental-strip-types src/storage/migrator.ts",
+    "db:seed": "node --experimental-strip-types src/storage/seeds/demo-seed.ts"
+  },
+  "keywords": [
+    "saas",
+    "multi-tenant",
+    "typescript",
+    "local-first",
+    "enterprise",
+    "zero-trust",
+    "submitbutton-com-status-de-formulario-corrigido"
+  ],
+  "author": "Felipe Madison (@FelipeMadson)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
