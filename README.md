@@ -33,6 +33,14 @@
 
 ---
 
+## 📐 Arquitetura do Sistema & Fluxo de Dados
+
+<p align="center">
+  <img src="docs/assets/architecture.svg" alt="Arquitetura & Fluxo de Dados - Submitbutton Com Status De Formulario Corrigido" width="920" />
+</p>
+
+---
+
 ## 🎮 Live Interactive Playground (No Backend Required)
 
 Experimente o console SaaS corporativo com métricas multi-tenant, gráficos de vazão ao vivo e cálculo de percentis P99:
