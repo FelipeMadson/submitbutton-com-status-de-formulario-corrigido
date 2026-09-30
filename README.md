@@ -1,5 +1,15 @@
 # SubmitButton com Status de Formulário Corrigido
 
+[![CI Status](https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/actions/workflows/ci.yml/badge.svg)](https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/actions)
+[![Latest Release](https://img.shields.io/github/v/release/FelipeMadson/submitbutton-com-status-de-formulario-corrigido?color=145e4d&logo=github)](https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/releases)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![SemVer 2.0.0](https://img.shields.io/badge/semver-2.0.0-blue.svg)](https://semver.org)
+
+[![CI Status](https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/actions/workflows/ci.yml/badge.svg)](https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/actions)
+[![Latest Release](https://img.shields.io/github/v/release/FelipeMadson/submitbutton-com-status-de-formulario-corrigido?color=145e4d&logo=github)](https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/releases)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![SemVer 2.0.0](https://img.shields.io/badge/semver-2.0.0-blue.svg)](https://semver.org)
+
 [![Node.js Version](https://img.shields.io/badge/Node.js-22%20%7C%2024%20LTS-brightgreen.svg)](https://nodejs.org)
 [![Architecture](https://img.shields.io/badge/Architecture-Clean%20Multi--Tenant%20SaaS-blue.svg)](docs/architecture)
 [![Test Suite](https://img.shields.io/badge/Tests-14%2F14%20Passing%20(node%3Atest)-success.svg)](backend/tests)
@@ -10,6 +20,15 @@
 > **Problema com o useFormStatus retornando falso em formulários React**
 
 ---
+
+
+---
+
+## 🖥️ Demonstração em Terminal Vetorial (Execução & Benchmarks)
+
+<p align="center">
+  <img src="docs/assets/terminal-demo.svg" alt="Terminal Demo - Submitbutton Com Status De Formulario Corrigido" width="840" />
+</p>
 
 ## 🏛️ Visão Arquitetural & System Design
 
@@ -101,3 +120,16 @@ docker-compose up --build
 * **Autor:** Felipe Madison ([@FelipeMadson](https://github.com/FelipeMadson))
 * **Formação:** Tecnologia em Sistemas para Internet (TSI)
 * **Licença:** MIT
+
+---
+
+## 📦 Polyglot Client SDKs (TypeScript & Python)
+
+SDKs tipados com zero dependências externas em `sdk/`:
+
+```typescript
+import { submitbuttoncomstatusdeformulariocorrigidoClient } from "./sdk/ts/client.ts";
+const client = new submitbuttoncomstatusdeformulariocorrigidoClient({ baseUrl: "http://127.0.0.1:3000" });
+const health = await client.checkHealth();
+console.log("Health:", health.status);
+```
