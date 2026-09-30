@@ -1,0 +1,46 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Submitbutton Com Status De Formulario Corrigido SBOM",
+  "documentNamespace": "https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido/spdxdocs/submitbutton-com-status-de-formulario-corrigido-1.0.0-60f689f7-9864-4b9e-9350-04a5a2bc800e",
+  "creationInfo": {
+    "created": "2026-09-30T15:18:14.312Z",
+    "creators": [
+      "Person: Felipe Madison (@FelipeMadson)",
+      "Organization: Autonomous Portfolio Engine — Staff Engineering Grade",
+      "Tool: SecurityCiGenerator-1.0.0"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "packages": [
+    {
+      "name": "submitbutton-com-status-de-formulario-corrigido",
+      "SPDXID": "SPDXRef-Package-submitbutton-com-status-de-formulario-corrigido",
+      "versionInfo": "1.0.0",
+      "packageFileName": "submitbutton-com-status-de-formulario-corrigido-1.0.0.tar.gz",
+      "packageSupplier": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "originator": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "downloadLocation": "git+https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido.git@v1.0.0",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "49715209d16d21e5371d3cabbd7eb83400348f757832fdded8f81ec3941a4911"
+        }
+      ],
+      "homepage": "https://github.com/FelipeMadson/submitbutton-com-status-de-formulario-corrigido",
+      "concludedLicense": "MIT",
+      "declaredLicense": "MIT",
+      "copyrightText": "Copyright (c) 2026 Felipe Madison (@FelipeMadson)",
+      "description": "Enterprise-grade production release for Submitbutton Com Status De Formulario Corrigido, engineered by Felipe Madison."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Package-submitbutton-com-status-de-formulario-corrigido",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}

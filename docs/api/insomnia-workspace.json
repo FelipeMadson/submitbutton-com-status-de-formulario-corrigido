@@ -1,0 +1,136 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-09-30T15:18:14.311Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "wrk_submitbutton-com-status-de-formulario-corrigido_suite",
+      "_type": "workspace",
+      "created": 1790781494311,
+      "modified": 1790781494311,
+      "name": "Submitbutton Com Status De Formulario Corrigido API Suite",
+      "description": "Ambiente Insomnia para Submitbutton Com Status De Formulario Corrigido. Autor: Felipe Madison (@FelipeMadson)",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_submitbutton-com-status-de-formulario-corrigido_base",
+      "_type": "environment",
+      "parentId": "wrk_submitbutton-com-status-de-formulario-corrigido_suite",
+      "created": 1790781494311,
+      "modified": 1790781494311,
+      "name": "Local Development",
+      "data": {
+        "base_url": "http://localhost:3000",
+        "api_key": "test-staff-engineer-token-madison"
+      }
+    },
+    {
+      "_id": "req_submitbutton-com-status-de-formulario-corrigido_1",
+      "_type": "request",
+      "parentId": "wrk_submitbutton-com-status-de-formulario-corrigido_suite",
+      "created": 1790781494311,
+      "modified": 1790781494311,
+      "name": "1. Health & Liveness Probe",
+      "method": "GET",
+      "url": "{{ _.base_url }}/health",
+      "description": "Verifica a integridade imediata do serviço, tempo de atividade e status do subsistema WAL.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {}
+    },
+    {
+      "_id": "req_submitbutton-com-status-de-formulario-corrigido_2",
+      "_type": "request",
+      "parentId": "wrk_submitbutton-com-status-de-formulario-corrigido_suite",
+      "created": 1790781494312,
+      "modified": 1790781494312,
+      "name": "2. OpenMetrics / Prometheus Telemetry",
+      "method": "GET",
+      "url": "{{ _.base_url }}/metrics",
+      "description": "Exporta telemetria em formato texto padrão OpenMetrics para raspagem por Prometheus e Grafana.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {}
+    },
+    {
+      "_id": "req_submitbutton-com-status-de-formulario-corrigido_3",
+      "_type": "request",
+      "parentId": "wrk_submitbutton-com-status-de-formulario-corrigido_suite",
+      "created": 1790781494313,
+      "modified": 1790781494313,
+      "name": "3. Dispatch / Processar Operação — Submitbutton Com Status De Formulario Corrigido",
+      "method": "POST",
+      "url": "{{ _.base_url }}/api/v1/submitbutton-com-status-de-formulario-corrigido/dispatch",
+      "description": "Executa transação com garantia de atomicidade, validação de integridade e registro no log WAL.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"action\": \"PROCESS_TRANSACTION\",\n  \"payload\": {\n    \"clientId\": \"felipe-madison-tester\",\n    \"timestamp\": \"2026-09-30T15:18:14.311Z\",\n    \"data\": {\n      \"sampleKey\": \"enterprise-payload-sample\",\n      \"priority\": \"HIGH\"\n    }\n  }\n}"
+      }
+    },
+    {
+      "_id": "req_submitbutton-com-status-de-formulario-corrigido_4",
+      "_type": "request",
+      "parentId": "wrk_submitbutton-com-status-de-formulario-corrigido_suite",
+      "created": 1790781494314,
+      "modified": 1790781494314,
+      "name": "4. Consulta de Estado Consolidado — Submitbutton Com Status De Formulario Corrigido",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/v1/submitbutton-com-status-de-formulario-corrigido/state",
+      "description": "Recupera o estado atualizado em memória e estatísticas de processamento persistidas.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {}
+    }
+  ]
+}
