@@ -31,4 +31,4 @@ npm test
 
 ## ⚖️ License
 
-MIT License - Copyright (c) Felipe Madson.
+MIT License - Copyright (c) Felipe Madison.
